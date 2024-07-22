@@ -9,3 +9,6 @@ scikit-learn
 seaborn
 shap
 xgboost
+azure-ai-ml
+azure-identity
+azure-core
