@@ -32,49 +32,25 @@
 - Terraform - as Infrastructure-as-Code (IaC) provide setup gcp services;
 - MLFlow - for experiment tracking and model registry
 - MageAI - for orchestration load, transform, train, inference, export;
-- Azure container instances - for run mage in cloud;
+- Azure container instances - for run mage and run model in cloud;
+- Azure container registry - for storing registry image or model;
 - Azure Blob Storage - for storing model files;
 - Azure machine learning - for monitoring model;
 
-## DATASET
-Dataset for this project source from : https://huggingface.co/datasets/maharshipandya/spotify-tracks-dataset/blob/c4609440b24ac4075899f6e60b33775acbe00827/dataset.csv 
+## EXPERIMENT TRACKING AND MODEL REGISTRY 
 
-Here the DAG from mage :
 
-![image](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/c91c33dd-ca6b-4d11-a085-a3aadaec7bc9)
+## DATASET & WORKFLOW ORCHESTRATION
+Dataset for this project source using yfinance api and i clean and convert the data into csv file and i upload to azure blob storage
+![alt text](image-4.png)
 
-Here the dbt lineage graph :
+Here the orchestration from mage :
 
-![image](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/c7cb963a-7f08-4a84-8c6b-08344b859595)
+![alt text](image-5.png)
 
-Due to this dataset doesn't have datetime or timestamp this data cannot be partitioned.
+## MODEL DEPLOYMENT
 
-Clustered by genre column to improve performance.
-
-## DATA ARCHITECTURE & WORKFLOW
-
-![Work Flow](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/772944b3-e0f3-468f-87a5-8f24260d4a9e)
-
-**1. Data Ingestion from Web API:**
-     Utilize Cloud Run to create a scalable and serverless solution for fetching data from the Web API using Mage. Store the extracted data in a Cloud Storage
-
-**2. Extract, Transform, Load (ETL) using Mage:**
-     Use Mage to perform ETL operations on the raw data fetched from the Web API. Implement data transformations to cleaning data from null data, converted to minute and rename column name. Load data into a Cloud Storage.
-
-**3. Save Data in Google Cloud Storage as Data Lake:**
-     Store the transformed data in Google Cloud Storage as a data warehouse for long-term storage and analysis.
-
-**4. Data Transformation using dbt:**
-     Set up a dbt to orchestrate and define transformation logic such as aggregations, joins, and calculations within dbt models to generate analytical datasets. Execute dbt jobs to build and run the defined transformations and generate output datasets in the data warehouse for using in looker studio.
-
-**5. Data Visualization using Looker Studio:**
-     Connect Looker to the data warehouse or BigQuery where the transformed datasets reside. Create dashboards, reports, and visualizations using Looker's drag-and-drop interface to giving insights effectively.
-
-## INSIGHTS DASHBOARD
-
-![image](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/e982d182-d4a7-4bde-baa3-bd32b2cde8a8)
-
-Click [here](https://lookerstudio.google.com/reporting/f562671f-beab-47db-b706-5e864ffa0726) to look a dashboard
+## MODEL MONITORING
 
 ## Reproduce
 
@@ -88,7 +64,7 @@ If you're successfully installed you can check with
 
 ![image](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/43710fc5-4cf3-4639-8b92-c8f00e411d14)
 
-## 2. Installation Mage - Orchestration Tool using Terraform in GCP
+## 2. Installation Mage - Orchestration Tool using Terraform in Azure
 
 If you're confused with the installation Mage in GCP I recommend using official Mage documentation and downloading all files :
 
@@ -115,12 +91,6 @@ Check if everything is correct, if there are error fix an error
 Run command `terraform apply` Type "yes" then press Enter. You can check into GCP
 
 ![image](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/8f7e3783-341b-4797-9d11-4de427b451a8)
-
-## 3. Installation DBT Cloud :
-
-For further information setup DBT Cloud. Follow this tutorial from datatalksclub. Thanks for providing this tutorial.
-
-> https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/04-analytics-engineering/dbt_cloud_setup.md
 
 ## Acknowledgments
 
