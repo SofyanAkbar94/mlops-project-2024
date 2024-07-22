@@ -42,6 +42,7 @@
 
 ## DATASET & WORKFLOW ORCHESTRATION
 Dataset for this project source using yfinance api and i clean and convert the data into csv file and i upload to azure blob storage
+
 ![alt text](image-4.png)
 
 Here the orchestration from mage :
@@ -76,7 +77,7 @@ Enter to terraform folder
 
 Open `variables.tf` file, fill and setting as you wish
 
-![image](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/ecde3fc4-3c82-471a-8683-7abdbd5beb7d)
+![alt text](image-6.png)
 
 Run `terraform init` The terraform init command initializes a working directory containing configuration files and installs plugins for required providers.
 
