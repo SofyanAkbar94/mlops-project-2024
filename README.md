@@ -12,19 +12,19 @@ This project aims to build an end-to-end MLOps pipeline for predicting gold pric
   ![alt text](image.png)
 
   ![alt text](image-1.png)
-  
+
   ### Solution :
-  
+
   Change name and add suffix number
-  
+
 ### - Problem in authorization mage with azure
-  
+
   ![alt text](image-2.png)
-  
+
   ### Solution :
-  
+
   Give secret key connection string
-  
+
   ![alt text](image-3.png)
 
 ## USED TECHNOLOGIES
@@ -61,11 +61,15 @@ For this project I create Dockerfile for step to create container using model, a
 
 ## MODEL MONITORING
 
+Due to new installation in azure machine learning the data is not enough to generate metric or chart.
+
 ![alt text](image-12.png)
 
 ![alt text](image-13.png)
 
 ![alt text](image-14.png)
+
+![alt text](image-15.png)
 
 ## Reproduce
 
@@ -74,7 +78,7 @@ For this project I create Dockerfile for step to create container using model, a
 I used Windows OS so for installation you can read the documentation in here :
 > https://phoenixnap.com/kb/how-to-install-terraform
 
-If you're successfully installed you can check with 
+If you're successfully installed you can check with
 `terraform --version`
 
 ![image](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/43710fc5-4cf3-4639-8b92-c8f00e411d14)
