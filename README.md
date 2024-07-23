@@ -87,7 +87,7 @@ If you're successfully installed you can check with
 
 If you're confused with the installation Mage in GCP I recommend using official Mage documentation and downloading all files :
 
-> https://github.com/mage-ai/mage-ai-terraform-templates/tree/master/gcp
+> https://github.com/mage-ai/mage-ai-terraform-templates/tree/master/azure
 
 Save in your local folder
 Open terminal or visual studio code
