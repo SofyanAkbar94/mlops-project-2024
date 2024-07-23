@@ -28,7 +28,7 @@ This project aims to build an end-to-end MLOps pipeline for predicting gold pric
   ![alt text](image-3.png)
 
 ## USED TECHNOLOGIES
-- Terraform - as Infrastructure-as-Code (IaC) provide setup gcp services;
+- Terraform - as Infrastructure-as-Code (IaC) provide setup azure services;
 - MLFlow - for experiment tracking and model registry
 - MageAI - for orchestration load, transform, train, inference, export;
 - Azure container instances - for run mage and run model in cloud;
@@ -85,7 +85,7 @@ If you're successfully installed you can check with
 
 ## 2. Installation Mage - Orchestration Tool using Terraform in Azure
 
-If you're confused with the installation Mage in GCP I recommend using official Mage documentation and downloading all files :
+If you're confused with the installation Mage in Azure I recommend using official Mage documentation and downloading all files :
 
 > https://github.com/mage-ai/mage-ai-terraform-templates/tree/master/azure
 
@@ -103,11 +103,11 @@ Run `terraform init` The terraform init command initializes a working directory 
 
 Run `terraform plan` The terraform plan command creates an execution plan, which lets you preview the changes that Terraform plans to make to your infrastructure.
 
-![image](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/d65da367-bdbe-463f-bfec-459ea253d92e)
+![image](![alt text](image-16.png))
 
 Check if everything is correct, if there are error fix an error
 
-Run command `terraform apply` Type "yes" then press Enter. You can check into GCP
+Run command `terraform apply` Type "yes" then press Enter. You can check into Azure
 
 ![image](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/8f7e3783-341b-4797-9d11-4de427b451a8)
 
