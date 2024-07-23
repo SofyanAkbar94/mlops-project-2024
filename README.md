@@ -1,8 +1,6 @@
 # MLOPS GOLD PRICE PREDICTION
 
-
 ## INTRODUCTION
-  
 <p align="justify"> Gold price prediction is a critical task for investors, financial analysts, and policymakers due to gold's significance as a hedge against inflation and currency fluctuations. Accurate forecasting of gold prices can lead to more informed decision-making and better risk management. To achieve reliable predictions, we leverage advanced machine learning models and MLOps practices to create a robust, scalable, and automated gold price prediction system. </p>
 <p align="justify">
 This project aims to build an end-to-end MLOps pipeline for predicting gold prices. It encompasses data collection, preprocessing, model training, deployment, and monitoring using Azure Machine Learning services. The goal is to ensure that our model remains accurate, reliable, and continuously improving with minimal manual intervention. </p>
@@ -39,14 +37,14 @@ This project aims to build an end-to-end MLOps pipeline for predicting gold pric
 - Azure machine learning - for monitoring model;
 
 ## EXPERIMENT TRACKING AND MODEL REGISTRY
-For this project I create experiment tracking and model registry as depicted below.
+For this project I create experiment tracking and model registry as depicted below. You can check folder mlflow for registry model files.
+- Experiment Tracking
+![alt text](image-9.png)
+-Model Registry
 ![alt text](image-7.png)
 
-![alt text](image-8.png)
-
-
 ## DATASET & WORKFLOW ORCHESTRATION
-Dataset for this project source using yfinance api and i clean and convert the data into csv file and i upload to azure blob storage
+Dataset for this project source using yfinance api and i clean and convert the data into csv file and i upload to azure blob storage. You can check folder mageai for the logic and machine learning pipeline.
 
 ![alt text](image-4.png)
 
@@ -55,6 +53,11 @@ Here the orchestration from mage :
 ![alt text](image-5.png)
 
 ## MODEL DEPLOYMENT
+For this project I create Dockerfile for step to create container using model, app.py file for the logic of the program, requirements.txt for dependencies and model as depicted below. You can check folder dockerize-model for all files to create docker image.
+
+![alt text](image-11.png)
+
+![alt text](image-10.png)
 
 ## MODEL MONITORING
 

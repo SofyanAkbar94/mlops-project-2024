@@ -9,12 +9,13 @@ COPY . /app
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install streamlit
 
-# Make port 80 available to the world outside this container
-EXPOSE 80
+# Copy the model
+COPY model/random_forest_model.pkl /app/model/random_forest_model.pkl
 
-# Define environment variable
-ENV NAME World
+# Make port 8501 available to the world outside this container
+EXPOSE 8501
 
 # Run app.py when the container launches
-CMD ["python", "app/main.py"]
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]

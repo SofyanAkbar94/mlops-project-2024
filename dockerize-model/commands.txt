@@ -2,4 +2,4 @@ Build the Docker image
 docker build -t my_ml_model .
 
 Run the Docker container
-docker run -p 4000:80 my_ml_model
+docker run -p 8501:8501 my_ml_model

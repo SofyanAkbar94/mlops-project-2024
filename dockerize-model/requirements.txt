@@ -1,6 +1,4 @@
-flask
-pandas
-scikit-learn
+streamlit
 joblib
-mlflow
-azure-storage-blob
+numpy
+scikit-learn
