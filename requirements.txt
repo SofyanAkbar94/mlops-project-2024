@@ -1,0 +1,8 @@
+streamlit
+numpy
+joblib
+scikit-learn
+flake8
+black
+unittest
+pre-commit
