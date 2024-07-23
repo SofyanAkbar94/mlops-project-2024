@@ -1,0 +1,28 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.1
+mlflow_version: 2.14.3
+model_size_bytes: 38658804
+model_uuid: 3925bd921c8c4643a69461d5d653fd3e
+run_id: 1d9211e02743409ab7368357c81d5c0a
+signature:
+  inputs: '[{"type": "long", "name": "Unnamed: 0", "required": true}, {"type": "double",
+    "name": "Open", "required": true}, {"type": "double", "name": "High", "required":
+    true}, {"type": "double", "name": "Low", "required": true}, {"type": "double",
+    "name": "Close", "required": true}, {"type": "long", "name": "Volume", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-07-23 08:19:37.407988'
