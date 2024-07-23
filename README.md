@@ -61,6 +61,12 @@ For this project I create Dockerfile for step to create container using model, a
 
 ## MODEL MONITORING
 
+![alt text](image-12.png)
+
+![alt text](image-13.png)
+
+![alt text](image-14.png)
+
 ## Reproduce
 
 ## 1. Installation Terraform
