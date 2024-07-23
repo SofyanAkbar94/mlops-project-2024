@@ -99,11 +99,11 @@ Open `variables.tf` file, fill and setting as you wish
 
 Run `terraform init` The terraform init command initializes a working directory containing configuration files and installs plugins for required providers.
 
-![image](https://github.com/SofyanAkbar94/Project-DE-Zoomcamp-2024/assets/136363515/5b3adbc5-a331-4649-98e5-b4feba8fc1c9)
+![alt text](image-17.png)
 
 Run `terraform plan` The terraform plan command creates an execution plan, which lets you preview the changes that Terraform plans to make to your infrastructure.
 
-![image](![alt text](image-16.png))
+![alt text](image-16.png)
 
 Check if everything is correct, if there are error fix an error
 
