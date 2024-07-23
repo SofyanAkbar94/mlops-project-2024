@@ -38,7 +38,11 @@ This project aims to build an end-to-end MLOps pipeline for predicting gold pric
 - Azure Blob Storage - for storing model files;
 - Azure machine learning - for monitoring model;
 
-## EXPERIMENT TRACKING AND MODEL REGISTRY 
+## EXPERIMENT TRACKING AND MODEL REGISTRY
+For this project I create experiment tracking and model registry as depicted below.
+![alt text](image-7.png)
+
+![alt text](image-8.png)
 
 
 ## DATASET & WORKFLOW ORCHESTRATION
